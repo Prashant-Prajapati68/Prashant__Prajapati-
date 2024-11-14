@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prashant Prajapati's Personal Website</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background: linear-gradient(to right, #ffffff, #e0f7fa);
+            overflow-x: hidden;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(to right, #1e88e5, #1565c0);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            animation: fadeIn 2s ease;
+        }
+
+        header nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 10px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        header nav ul li {
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            color: #ffeb3b;
+        }
+
+        /* Section Styles */
+        .section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .section:nth-child(even) {
+            background: #f0f4c3;
+        }
+
+        .section h2 {
+            color: #1e88e5;
+            font-size: 2.4rem;
+            margin-bottom: 20px;
+        }
+
+        .section p, .section ul {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 40px;
+            text-align: left;
+        }
+
+        /* Marquee */
+        marquee {
+            background: linear-gradient(to right, #ffeb3b, #fff9c4);
+            color: #333;
+            font-size: 1.5rem;
+            font-weight: bold;
+            padding: 10px;
+            margin: 20px 0;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Picture Styling */
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px auto;
+            display: block;
+            border: 5px solid #1e88e5;
+            animation: bounce 2s infinite;
+        }
+
+        /* Button */
+        .btn {
+            display: inline-block;
+            background: #1e88e5;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background: #1565c0;
+        }
+
+        /* Footer */
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Prashant Prajapati</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#more">More</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Marquee -->
+    <marquee behavior="scroll" direction="left">Welcome to my personal website! Explore my projects, achievements, and more!</marquee>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <img src="c.jpg" alt="Prashant's Picture" class="profile-pic">
+        <p>Hello! My name is Prashant Prajapati. I enjoy coding, creating science projects, and exploring new technologies. I believe in making a positive impact through innovation and creativity.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
+        <p><strong>Email:</strong> prashant14april@gmail.com</p>
+        <p><strong>Mobile:</strong> +91-7843079963</p>
+        <button class="btn" onclick="sendEmail()">Send Me a Message</button>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <h2>Achievements</h2>
+        <ul>
+            <li>Developed several science projects with innovative designs.</li>
+            <li>Excelled in competitive coding challenges.</li>
+            <li>Won the "Best Tech Idea" award at a local tech fest.</li>
+            <li>
+                <strong>My Projects:</strong>
+                <ul>
+                    <li><a href="https://prashant-prajapati68.github.io/NcertEbook-/" target="_blank">NCERT E-book Website</a></li>
+                    <li><a href="https://prashant-prajapati68.github.io/Smart-and-simple-calculator-/" target="_blank">Smart & Simple Calculator</a></li>
+                    <li><a href="https://prashant-prajapati68.github.io/Sudoko-game-/" target="_blank">Sudoku Game</a></li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <!-- More Section -->
+    <section id="more" class="section">
+        <h2>More About Me</h2>
+        <p>I am passionate about learning new technologies and solving real-world problems through innovative solutions. My goal is to continuously grow and contribute to the tech community.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Prashant Prajapati. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function sendEmail() {
+            window.location.href = "mailto:prashant14april@gmail.com";
+        }
+    </script>
+</body>
+</html>
